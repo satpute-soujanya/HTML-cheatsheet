@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formating</title>
+  </head>
+  <body>
+    <h1>Formating Tags</h1>
+    <bdo dir="rtl">hellow</bdo>
+    <p>
+      Lorem ipsum dolor <abbr title="System Invention Turf ">sit </abbr> amet
+      consectetur adipisicing elit. Alias natus reiciendis distinctio voluptatem
+      sequi? Ipsam aliquam aut tempore neque necessitatibus nostrum a vitae
+      illum blanditiis aspernatur optio quo minima eveniet incidunt quasi natus
+      est, adipisci <b>possimus</b> cupiditate debitis commodi! Beatae ut
+      deleniti inventore id saepe ratione tempore, ipsum sapiente eaque quasi
+      ipsa vel, vitae exercitationem <q>neque</q> reprehenderit recusandae
+      debitis quidem. Suscipit dicta veritatis sequi non debitis necessitatibus
+      id, molestiae corporis aperiam nesciunt vel at quae corrupti nihil, quo
+      consequuntur tempore repudiandae expedita cum assumenda ipsum. Commodi,
+      modi architecto! Nemo sequi eaque architecto vitae dolore minima, corrupti
+      quasi dolor asperiores assumenda repellendus nobis enim sit dolorem!
+      Dolorum optio rerum voluptas aliquam vel fuga temporibus, repudiandae
+      perspiciatis debitis velit quo ea earum pariatur accusamus! Atque quasi
+      aliquid repellat totam facere quaerat nobis sequi deleniti a tenetur modi
+      dolores nihil, debitis temporibus <em>illum</em> <i>cupiditate</i>, dicta
+      eum. Eos sapiente nesciunt deserunt, sit rem provident voluptate saepe!
+      Ipsum distinctio magni illum, sint porro veritatis impedit aliquam?
+      Eligendi quidem enim a fugiat animi rem deleniti accusamus quod unde
+      saepe. Consequuntur cumque quis perferendis? Dolorum soluta voluptates sit
+      ad, corporis dolorem ratione eos. Quis corporis ipsam
+      <cite>beatae vel non</cite>
+      praesentium in distinctio
+      <small>necessitatibus nihil, excepturi sit soluta!</small>
+    </p>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, in et?
+      Repellat aliquid aut minima illum amet molestiae natus saepe veniam,
+      necessitatibus, possimus modi dolor, quam temporibus voluptates alias
+      pariatur!
+    </blockquote>
+    <code>
+      funtion(labore){ <br />
+      return labore <br />
+      }
+    </code>
+    <p><kbd>Ctrl</kbd>+<kbd>C</kbd></p>
+    <p><ins>Inserted</ins> <del>Deleted</del></p>
+    <pre>
+                  TE
+    A       A
+      C    V
+       R A
+       DOU
+       LOU
+      REUSE
+      QUE TU
+      PORTES
+    ET QUI T'
+    ORNE O CI
+     VILISÉ
+    OTE-  TU VEUX
+     LA    BIEN
+    SI      RESPI
+            RER 
+    </pre>
+    <p>log <sub>2</sub>2 = 1</p>
+    <p>2 <sup>3</sup> = 8</p>
+    <label for="disk_c">Computer memory Full</label>
+    <meter id="disk_c" value="9" min="0" max="10">9 out of 10</meter><br />
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100">32%</progress>
+    <address>
+      Written by
+      <a href="mailto:satputesoujanya@gmail.com"> Soujanya Satpute</a>.<br />
+      website: <u>personalwebsite.com</u></a>
+      <br />
+      Address: Red planet house Holden Crater, Mars<br />
+    </address>
+    <hr>
+    <h2>Show hiddden content</h2>
+<button onclick="showContent()">Show hidden content</button>
+
+    <template>
+    <h2>Flower</h2>
+    <img src="https://thumbs.dreamstime.com/b/pink-cosmos-flowe-flowerbackground-112007426.jpg" width="214" height="204">
+    </template>
+    <script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+  </body>
+</html>

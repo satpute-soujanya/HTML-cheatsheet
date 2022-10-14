@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Media page</h1>
+    <img
+      src="https://openai.com/content/images/2021/01/2x-no-mark-1.jpg"
+      alt="DallE image"
+      width="200"
+    />
+    <map name="infographic">
+      <area
+        shape="poly"
+        coords="130,147,200,107,254,219,130,228"
+        href="https://developer.mozilla.org/docs/Web/HTML"
+        target="_blank"
+        alt="HTML"
+      />
+      <area
+        shape="poly"
+        coords="130,147,130,228,6,219,59,107"
+        href="https://developer.mozilla.org/docs/Web/CSS"
+        target="_blank"
+        alt="CSS"
+      />
+      <area
+        shape="poly"
+        coords="130,147,200,107,130,4,59,107"
+        href="https://developer.mozilla.org/docs/Web/JavaScript"
+        target="_blank"
+        alt="JavaScript"
+      />
+    </map>
+    <img
+      usemap="#infographic"
+      src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"
+      alt="MDN infographic"
+      width="260"
+      height="232"
+    />
+    <br />
+    <picture>
+      <source
+        srcset="
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRubQH1F3DZWpm3WYs5SKpQBSH_ocCYenGjkA&usqp=CAU
+        "
+        media="(min-width: 800px)"
+      />
+
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGawC4ToKE3wCtMfBzuBq4RI-x9m-Ir-Iww&usqp=CAU"
+        alt=""
+      />
+    </picture>
+    <canvas id="circle"> </canvas>
+    <svg
+      viewBox="0 0 500 100"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="red"
+      fill="grey"
+    >
+      <circle cx="50" cy="50" r="40" />
+      <circle cx="150" cy="50" r="4" />
+    </svg>
+    <hr />
+    <!-- <audio controls src="./audio.mp3" type="audio/mpeg"></audio> -->
+    <h1>Music here</h1>
+    <audio controls>
+      <source src="./media/audio.mp3" />
+    </audio>
+    <br />
+    <video width="400" height="400" controls>
+      <source src="./media/how I learn.mp4" type="video/mp4" />
+      <track
+        src="./media/videosubtitle.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+      />
+    </video>
+
+    <script>
+      var c = document.getElementById('circle')
+      var ctx = c.getContext('2d')
+      ctx.beginPath()
+      ctx.arc(100, 75, 50, 0, 2 * Math.PI)
+      ctx.stroke()
+    </script>
+  </body>
+</html>
