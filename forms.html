@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="media/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="media/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="media/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="media/favicon_io/site.webmanifest" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Register yourself</h1>
+    <form>
+      <fieldset>
+        <legend>Primary info</legend>
+        <label for="name">Name</label> <br />
+        <input type="text" name="name" id="name" /><br />
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" /><br />
+        <label for="password">Password</label><br />
+        <input type="password" name="password" id="password" /><br />
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea
+        ><br />
+      </fieldset>
+      <label for="date">Date</label> <br />
+      <input type="date" name="date" id="date" /><br />
+      <label for="time">Time</label> <br />
+      <input type="time" name="time" id="time" /><br />
+      <label for="color">Color</label> <br />
+      <input type="color" name="color" id="color" /><br />
+      <label for="range">Range</label> <br />
+      <input type="range" name="range" id="range" /><br />
+      <label for="number">Number</label> <br />
+      <input type="number" name="number" id="number" /><br />
+      <label for="tel">Telephone</label> <br />
+      <input type="tel" name="tel" id="tel" /><br />
+      <label for="url">WEBSITE</label> <br />
+      <input type="url" name="url" id="url" /><br />
+      <label for="search">Search</label> <br />
+      <input type="search" name="search" id="search" /><br />
+      <label for="file">File</label> <br />
+      <input type="file" name="file" id="file" /><br />
+      <label for="fav_language">What is your fav_language?</label> <br />
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label> <br />
+      <label for="browser">Choose your browser from the list:</label>
+      <input list="browsers" name="browser" id="browser" />
+
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+      <br />
+      <label for="cars">Choose a car:</label>
+
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+      <input type="checkbox" name="checkbox" id="checkbox" />
+
+      <label for="checkbox">Agree privacy policy</label> <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+<!-- 
+  http://127.0.0.1:5500/forms.html?name=&email=&password=&message=&date=&time=&color=%23000000&range=50&number=&tel=&url=&search=&file=&browser=&cars=volvo
+ -->

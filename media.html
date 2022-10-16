@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="media/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="media/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="media/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="media/favicon_io/site.webmanifest" />
+    <title>Media</title>
   </head>
   <body>
-    <h1>Media page</h1>
-    <img
-      src="https://openai.com/content/images/2021/01/2x-no-mark-1.jpg"
-      alt="DallE image"
-      width="200"
-    />
+    <h1>Media</h1>
+    <img src="./media/flower.jpeg" alt="flower" width="400" />
     <map name="infographic">
       <area
         shape="poly"
@@ -36,14 +50,12 @@
         alt="JavaScript"
       />
     </map>
+
     <img
-      usemap="#infographic"
       src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"
-      alt="MDN infographic"
-      width="260"
-      height="232"
+      alt="mapImage"
+      usemap="#infographic"
     />
-    <br />
     <picture>
       <source
         srcset="
@@ -54,7 +66,7 @@
 
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGawC4ToKE3wCtMfBzuBq4RI-x9m-Ir-Iww&usqp=CAU"
-        alt=""
+        alt="duck"
       />
     </picture>
     <canvas id="circle"> </canvas>
@@ -67,14 +79,12 @@
       <circle cx="50" cy="50" r="40" />
       <circle cx="150" cy="50" r="4" />
     </svg>
-    <hr />
-    <!-- <audio controls src="./audio.mp3" type="audio/mpeg"></audio> -->
     <h1>Music here</h1>
     <audio controls>
       <source src="./media/audio.mp3" />
     </audio>
     <br />
-    <video width="400" height="400" controls>
+    <video width="320" height="240" controls>
       <source src="./media/how I learn.mp4" type="video/mp4" />
       <track
         src="./media/videosubtitle.vtt"
@@ -83,7 +93,7 @@
         label="English"
       />
     </video>
-
+    <br />
     <script>
       var c = document.getElementById('circle')
       var ctx = c.getContext('2d')

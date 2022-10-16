@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Format | html</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="media/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="media/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="media/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="media/favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <p><bdo dir="rtl">Right to left</bdo></p>
+    <p>
+      Lorem ipsum dolor,
+      <abbr title="Systematic inclusion tits ">sit</abbr> amet consectetur
+      adipisicing elit. <b> Saepe, odit!</b> Similique rem facere esse deleniti
+      nihil nam, nostrum est veniam provident aut,
+      <q>dolorum voluptatibus ipsam</q>. Perspiciatis laboriosam aut ratione est
+      quaerat in consequuntur! Voluptates sequi quis aperiam adipisci at ducimus
+      saepe deserunt cupiditate, facere mollitia commodi ab odio error officiis,
+      sit nam eaque autem quaerat ipsa. Impedit enim quisquam facilis aliquid.
+      Nihil voluptate perferendis accusantium, dolorum dolor ex possimus? Autem
+      earum, voluptatibus ab aperiam magnam consectetur quam. Eius eum nesciunt
+      officia facere maiores non harum. Incidunt, sint. Obcaecati, soluta?
+      Voluptate id facilis ea? Optio esse quae architecto at obcaecati fugit.
+      Nemo fugiat voluptate laboriosam deleniti optio fugit blanditiis quas
+      reprehenderit animi, quidem ut molestias provident dolorem ducimus est
+      illo quasi cum enim veniam repellat a, fuga cupiditate tempora rem. Saepe
+      minima quaerat porro aperiam vero accusamus sed, neque quae architecto
+      eveniet facilis debitis sapiente, incidunt adipisci iusto dolor, libero
+      impedit. Asperiores porro molestiae qui laudantium repellendus vero
+      numquam quasi? Optio ex pariatur officiis illo libero quis sint! Quasi at
+      odio quisquam beatae reprehenderit nam velit ab, itaque minus aperiam
+      necessitatibus. Praesentium debitis, eius inventore possimus est odit
+      autem fugit error! Quos architecto nemo ratione quod alias fuga quidem
+      dignissimos atque obcaecati officia! Dolore tenetur voluptate, quod
+      voluptatem sit vitae, ut animi alias enim pariatur est exercitationem iure
+      nostrum voluptas facilis impedit, unde incidunt. Explicabo nobis obcaecati
+      incidunt? Aperiam, consequuntur! Odit amet natus asperiores esse
+      distinctio accusantium corrupti, <u>culpa perferendis nam</u>
+      <i>laborum</i> nobis saepe, a dignissimos, eos quaerat architecto eum
+      explicabo incidunt animi? Fuga amet natus qui excepturi at
+      <em>consequatur</em> perferendis velit, vero, dignissimos nam deserunt in.
+      <small
+        >Sed quos reprehenderit perspiciatis accusantium recusandae, accusamus
+        quod fugiat nisi facilis? Soluta iure numquam est enim praesentium saepe
+        excepturi non vero illum neque? Architecto dolor voluptate sint,
+        provident velit natus repellat necessitatibus officiis nam</small
+      >.
+    </p>
+    <code>
+      funtion add(a,b) <br />
+      { return a+b; }
+    </code>
+    <p>For copy press <kbd>ctl</kbd> + <kbd>c</kbd></p>
+    <p><del>Deleted</del> <ins>Inserted</ins></p>
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100">32%</progress> <br />
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.6">60%</meter>
+    <p>log <sub>2</sub>2 = 1</p>
+    <p>2 <sup>2</sup>= 4</p>
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+      <h2>Flower</h2>
+      <img src="./media/flower.jpeg" width="214" height="204" />
+    </template>
+    <script>
+      function showContent() {
+        var temp = document.getElementsByTagName('template')[0]
+        var clon = temp.content.cloneNode(true)
+        document.body.appendChild(clon)
+      }
+    </script>
+  </body>
+</html>
